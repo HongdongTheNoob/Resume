@@ -1,0 +1,178 @@
+% !TEX program = xelatex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\usepackage{fontspec, xunicode, xltxtra}
+\usepackage{xeCJK}
+
+\setmainfont{HarmonyOS Sans}
+\setCJKmainfont{HarmonyOS Sans SC}
+
+\usepackage[ocgcolorlinks]{hyperref}
+\hypersetup{
+	colorlinks   = true, %Colours links instead of ugly boxes
+	urlcolor     = blue, %Colour for external hyperlinks
+	linkcolor    = blue, %Colour of internal links
+	citecolor   = red %Colour of citations
+}
+
+\name{覃泓胨} % Your name
+\address{(+86)~13603087140 \\ hongdongdonald@gmail.com} % Your phone number and email
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	PROFILE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{简介}
+
+电机电子工程博士，技术标准工程师。主要工作方向为视频编解码技术研发，专利申请，标准推动等。
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{教育经历}
+
+{\bf 香港大学} \hfill {2013年09月 -- 2020年06月} \\ 
+哲学博士，电机电子工程 \\
+毕业论文: \href{http://hdl.handle.net/10722/318421}{\textit{Novel Techniques for Depth Map Compression}}
+
+{\bf 新加坡国立大学} \hfill {2008年08月 -- 2008年12月} \\ 
+电机与电脑工程系交换生
+
+{\bf 香港理工大学} \hfill {2006年09月 -- 2011年08月} \\ 
+工学学士，电子及资讯工程学，甲等荣誉，包含12个月实习训练
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{工作经历}
+    \begin{rSubsection}{TCL}{2023年01月 -- 现在}{鸿鹄实验室，技术标准高级工程师}{深圳}
+        \item 视频编解码技术预研，相关专利分析
+		\item 开发视频编解码新方法，专利申请，参与标准制定
+    \end{rSubsection}
+
+    \begin{rSubsection}{深圳大学}{2020年10月 -- 2022年12月}{医学部生物医学工程学院，博士后研究员}{深圳}
+        \item 基于视频脑电的认识神经科学研究
+        \item 负责研发CT扫描中的颅内脑电电极定位算法
+    \end{rSubsection}
+
+	\begin{rSubsection}{香港大学}{2016年07月 -- 2019年06月}{电机电子工程系，研究助理}{香港}
+	\item 研发三维视频编解码方法
+	\item 自行开发的深度图压缩方法的效能超越同期的3D-HEVC
+	\end{rSubsection}
+
+    \begin{rSubsection}{万维数码}{2015年08月 -- 2017年12月}{工程咨询师}{香港}
+        \item 参与三维视频编解码标准竞投，撰写专利文书
+    \end{rSubsection}
+
+    \begin{rSubsection}{香港大学}{2011年08月 -- 2015年08月}{电机电子工程系，研究助理}{香港}
+        \item 参与中国数字音视频编解码技术标准项目（AVS）的研发
+        \item 研发视频编解码加速、在三维视频内容生成方法
+        \item AVS-1在ARM+DSP平台上可以达到实时的编解码
+        \item 开发半自动的图像分割和抠图工具
+    \end{rSubsection}
+
+    \begin{rSubsection}{晶门科技}{2009年06月 -- 2010年05月}{设计工程部，全职工程实习生}{香港}
+        \item 移动端显示设备上的快速图像编解码
+        \item 参与开发和测试新微控制器产品的汇编环境等工具，测试指令集
+    \end{rSubsection}
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{参与项目}
+    \begin{rSubsection}{音视频编解码技术研究}{2023年01月 -- 现在}{}{}
+        \item 视频编解码技术预研，相关专利分析
+		\item 开发视频编解码新方法，专利申请，参与标准制定
+    \end{rSubsection}
+
+    \begin{rSubsection}{颅内视频脑电智能计算}{2022年04月 -- 2022年10月}{}{}
+        \item 主要负责的工作是从病人头颅CT扫描中寻找植入的脑电电极
+        \item 初步实现电极的检测、定位、自动分组
+    \end{rSubsection}
+
+    \begin{rSubsection}{辅助视频数据压缩和视角生成系统}{2015年05月 -- 2018年11月}{}{}
+        \item 负责三维视频中的深度图压缩方法的设计，并开发了一套原创的深度图像和视频的压缩方法
+        \item 在不依赖纹理图像的情况下压缩深度图像，其压缩效能与3D-HEVC相当或更佳
+        \item 为压缩方法在GPU上设计了一套算法流程，达到1080p视频实时解码
+    \end{rSubsection}
+
+    \begin{rSubsection}{三维视频内容生成及处理系统}{2013年05月 -- 2015年05月}{}{}
+        \item 开发半自动的图像分割和抠图算法
+        \item 为制作三维视频的合作方提供了一个给图像进行物体切割，分层，组织数据的操作工具
+    \end{rSubsection}
+
+    \begin{rSubsection}{AVS-1视频编码标准在ARM+DSP平台的实现}{2011年08月 -- 2013年05月}{}{}
+        \item 将AVS的视频编解码移植到与移动设备功耗相当的ARM+DSP平台
+        \item 通过计算负载重新分配和异步处理，达到720p视频的实时编码和解码
+    \end{rSubsection}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATION AND PATENT SECTION
+%----------------------------------------------------------------------------------------
+
+\iffalse
+\begin{rSection}{发表的论文与专利}
+
+Z. Lin, \textbf{H. Qin} and S. C. Chan, ``A New Probabilistic Representation of Color Image Pixels and Its Applications,'' in \textit{IEEE Transactions on Image Processing}, vol. 28, no. 4, pp. 2037-2050, April 2019.
+
+``A depth discontinuity-based method for efficient intra coding for depth videos'', WO 2017/020808, February 09, 2017.
+
+``Systems and methods for multiple layer representation of depth map for intra coding'', Hong Kong Short-term Patent Application No. 19124682.6
+
+\end{rSection}
+\fi
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{其它技能}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+人类语言 & 普通话（母语），粤语（母语），英语（熟练流利）\\
+计算机语言 & C/C++, MatLab, Python \\
+开发工具 & Visual Studio, VSCode, Eclipse, Anaconda platform 
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
