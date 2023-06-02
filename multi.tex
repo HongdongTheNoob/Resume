@@ -39,7 +39,15 @@
 	citecolor   = red %Colour of citations
 }
 
-\name{QIN Hongdong} % Your name
+\newif\ifen
+\newif\ifzh
+
+\newcommand{\en}[1]{\ifen#1\fi}
+\newcommand{\zh}[1]{\ifzh#1\fi}
+
+\zhtrue
+
+\name{\en{QIN Hongdong}\zh{覃泓胨}} % Your name
 \address{(+86)13603087140 \\ hongdongdonald@gmail.com} % Your phone number and email
 
 \begin{document}
@@ -48,29 +56,50 @@
 %	PROFILE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Profile}
-
-PhD in electrical and electronic engineering and senior engineer on technical standardisation. Focusing on video coding development, patents investigations and standardisation practices.
-
+\begin{rSection}{\en{Profile}\zh{简介}}
+\en{
+	PhD in electrical and electronic engineering and senior engineer on technical standardisation. Focusing on video coding development, patents investigations and standardisation practices.
+}
+\zh{
+	电机电子工程博士，技术标准工程师。主要工作方向为视频编解码技术研发，专利申请，标准推动等。
+}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{Education}
-
+\begin{rSection}{\en{Education}\zh{教育经历}}
+\en{
 {\bf The University of Hong Kong} \hfill {Sep 2013 -- Jun 2020} \\ 
 Doctor of Philosophy \\
 Thesis title: \href{http://hdl.handle.net/10722/318421}{\textit{Novel Techniques for Depth Map Compression}}
+}
+\zh{
+{\bf 香港大学} \hfill {2013年09月 -- 2020年06月} \\ 
+哲学博士 \\
+毕业论文: \href{http://hdl.handle.net/10722/318421}{\textit{Novel Techniques for Depth Map Compression}}
+}
 
+\en{
 {\bf National University of Singapore} \hfill {Aug 2008 -- Dec 2008} \\ 
 Exchange Student, Electrical and Computer Engineering
+}
+\zh{
+{\bf 新加坡国立大学} \hfill {2008年08月 -- 2008年12月} \\ 
+电机与电脑工程系交换生
+}
 
+\en{
 {\bf The Hong Kong Polytechnic University} \hfill {Sep 2006 -- Aug 2011} \\ 
 Bachelor of Engineering in Electronic and Information Engineering \\
 Graduated with 1st Class Honours, including 12-month industrial training
-
+}
+\zh{
+{\bf 香港理工大学} \hfill {2006年09月 -- 2011年08月} \\ 
+工学学士，电子及资讯工程学 \\
+甲等荣誉，包含12个月实习训练
+}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
