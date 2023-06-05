@@ -119,6 +119,8 @@
   \vspace{0.5em}
 }
 
+
+
 \def\namesize{\huge}
 \def\nameskip{\medskip}
 \def\addressskip{\smallskip}
