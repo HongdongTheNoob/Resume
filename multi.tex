@@ -39,15 +39,21 @@
 	citecolor   = red %Colour of citations
 }
 
-\newif\ifen
 \newif\ifzh
+\newif\ifen
+\newif\iffr
+\newif\iflat
 
-\newcommand{\en}[1]{\ifen#1\fi}
 \newcommand{\zh}[1]{\ifzh#1\fi}
+\newcommand{\en}[1]{\ifen#1\fi}
+\newcommand{\fr}[1]{\iffr#1\fi}
+\newcommand{\lat}[1]{\iflat#1\fi}
 
-\entrue
+\frtrue
+\en{\lattrue}
+\fr{\lattrue}
 
-\name{\en{QIN Hongdong}\zh{覃泓胨}} % Your name
+\name{\zh{覃泓胨}\lat{QIN Hongdong}} % Your name
 \address{(+86)13603087140 \\ hongdongdonald@gmail.com} % Your phone number and email
 
 \begin{document}
@@ -56,99 +62,113 @@
 %	PROFILE SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{\en{Profile}\zh{简介}}
-\en{
-	PhD in electrical and electronic engineering and senior engineer on technical standardisation. Focusing on video coding development, patents investigations and standardisation practices.
-}
-\zh{
-	电机电子工程博士，技术标准工程师。主要工作方向为视频编解码技术研发，专利申请，标准推动等。
-}
+\begin{rSection}{\en{Profile}\zh{简介}\fr{Profil}}
+	\zh{电机电子工程博士，技术标准工程师。主要工作方向为视频编解码技术研发，专利申请，标准推动等。}
+	\en{PhD in electrical and electronic engineering and senior engineer on technical standardisation. Focusing on video coding development, patents investigations and standardisation practices.}
+	\fr{Docteur en génie électrique et électronique et ingénieur principal en normalisation technique. Axé sur le développement du codage vidéo, les enquêtes sur les brevets et les pratiques de normalisation.}
 \end{rSection}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{\en{Education}\zh{教育背景}}
-	{\bf\en{The University of Hong Kong}\zh{香港大学}} \hfill {2013-09 -- 2020-06}\\
-	{\en{Doctor of Philosophy}\zh{哲学博士}} \hfill {\en{Hong Kong}\zh{香港}}\\
-	\en{Thesis: }\zh{毕业论文：}\href{http://hdl.handle.net/10722/318421}{\textit{Novel Techniques for Depth Map Compression}}
+\begin{rSection}{\zh{教育背景}\en{Education}\fr{Formation}}
+	{\bf\zh{香港大学}\en{The University of Hong Kong}\fr{Université de Hong Kong}} \hfill 
+	{2013-09 -- 2020-06}\\
+	{\zh{哲学博士}\en{Doctor of Philosophy}\fr{Doctorat}} \hfill 
+	{\zh{香港}\lat{Hong Kong}}\\
+	\zh{毕业论文：}\en{Thesis: }\fr{Titre de la thèse : }\href{http://hdl.handle.net/10722/318421}{\textit{Novel Techniques for Depth Map Compression}}
 
-	{\bf\en{National University of Singapore}\zh{新加坡国立大学}} \hfill {2008-08 -- 2008-12}\\
-	{\en{Exchange Programme, Electrical and Computer Engineering}\zh{电机与电脑工程系交换生}} \hfill {\en{Singapore}\zh{新加坡}}
+	{\bf\zh{新加坡国立大学}\en{National University of Singapore}\fr{Université nationale de Singapour}} \hfill {2008-08 -- 2008-12}\\
+	{\zh{电机与电脑工程系交换生}\en{Exchange Programme, Electrical and Computer Engineering}\fr{Programme d'échanges, ingénierie électrique et informatique}} \hfill 
+	{\zh{新加坡}\en{Singapore}\fr{Singapour}}
 
-	{\bf\en{The Hong Kong Polytechnic University}\zh{香港理工大学}} \hfill {2006-09 -- 2011-08}\\
-	{\en{Bachelor of Engineering in Electronic and Information Engineering}\zh{工学学士，电子及资讯工程学}} \hfill {\en{Hong Kong}\zh{香港}}\\
-	\en{Graduated with 1st Class Honours}\zh{甲等荣誉}\\
-	\en{Included 12-month industrial training}\zh{包含12个月实习训练}
-
+	{\bf\zh{香港理工大学}\en{The Hong Kong Polytechnic University}\fr{Université polytechnique de Hong Kong}} \hfill 
+	{2006-09 -- 2011-08}\\
+	{\zh{工学学士，电子及资讯工程学}\en{Bachelor of Engineering in Electronic and Information Engineering}\fr{Baccalauréat en ingénierie, ingénierie électronique et informatique}} \hfill
+	{\zh{香港}\lat{Hong Kong}}\\
+	\zh{甲等荣誉}\en{Graduated with 1st Class Honours}\fr{Avec l'honneur de la 1ère  classe}\\
+	\zh{包含12个月实习训练}\en{Included 12-month industrial training}\fr{Avec le stage industriel de 12 mois}
 \end{rSection}
 
 % ----------------------------------------------------------------------------------------
 % 	WORK EXPERIENCE SECTION
 % ----------------------------------------------------------------------------------------
 
-\begin{rSection}{\en{Work Experience}\zh{工作经历}}
+\begin{rSection}{\zh{工作经历}\en{Work Experience}\fr{Expérience professionnelle}}
 	\begin{rSubsection}{TCL}
-		{2023-01 -- \en{Now}\zh{现在}}
-		{\en{Senior Engineer, Technical Standardisation at Eagle Lab}\zh{鸿鹄实验室，技术标准高级工程师}}
-		{\en{Shenzhen}\zh{深圳}}
-		\en{\item Perform technical pre-research on audio/video coding technologies and analyse patents}
+		{2023-01 -- \zh{现在}\en{Now}\fr{Aujourd'hui}}
+		{\zh{鸿鹄实验室，技术标准高级工程师}\en{Senior Engineer, Technical Standardisation at Eagle Lab}\fr{Ingénieur sénior, normalisation technique à Eagle Lab}}
+		{\zh{深圳}\lat{Shenzhen}}
 		\zh{\item 视频编解码技术预研，相关专利分析}
-		\en{\item Develop new video compression methods for standardisation purposes}
+		\en{\item Perform technical pre-research on video coding and analyse relevant patents}
+		\fr{\item Pré-recherches techniques sur le codage vidéo et analyser les brevets pertinents}
 		\zh{\item 开发视频编解码新方法，参与标准制定}
+		\en{\item Develop new video coding methods for standardisation purposes}
+		\fr{\item Développement de nouvelles techniques du codage vidéo pour la normalisation}
 	\end{rSubsection}
 	
-	\begin{rSubsection}{\en{Shenzhen University}\zh{深圳大学}}
+	\begin{rSubsection}{\zh{深圳大学}\en{Shenzhen University}\fr{Université de Shenzhen}}
 		{2020-10 -- 2022-12}
-		{\en{Post-doctoral Researcher at School of Biomedical Engineering}\zh{生物医学工程学院，博士后研究员}}
-		{\en{Shenzhen}\zh{深圳}}
-		\en{\item Worked on electroencephalography (EEG) related cognitive neuroscience investigations}        
+		{\zh{生物医学工程学院，博士后研究员}\en{Post-doctoral Researcher at School of Biomedical Engineering}\fr{Chercheur postdoctoral à School of Biomedical Engineering}}
+		{\zh{深圳}\lat{Shenzhen}}
 		\zh{\item 基于视频脑电的认识神经科学研究}
-		\en{\item Worked on project: localisation of intracranial EEG electrode contacts in CT scans}
+		\en{\item Worked on electroencephalography (EEG) related cognitive neuroscience investigations}
+		\fr{\item Recherche en neuroscience cognitive liées à l'électroencéphalographie (EEG)}
         \zh{\item 负责研发CT扫描中的颅内脑电电极定位算法}
+		\en{\item Worked on project: localisation of intracranial EEG electrode contacts in CT scans}
+		\fr{\item Localisation des contacts d'électrodes EEG intracrâniennes dans les scanners CT}
 	\end{rSubsection}
 	
-	\begin{rSubsection}{\en{The University of Hong Kong}\zh{香港大学}}
+	\begin{rSubsection}{\zh{香港大学}\en{The University of Hong Kong}\fr{Université de Hong Kong}}
 		{2016-07 -- 2019-06}
-		{\en{Research Assistant at Department of Electrical and Electronic Engineering}\zh{电机电子工程系，研究助理}}
-		{\en{Hong Kong}\zh{香港}}
-		\en{\item Researched on 3D video coding}
+		{\zh{电机电子工程系，研究助理}\en{Research Assistant at Department of Electrical and Electronic Engineering}\fr{Assistant de recherche à Departement of Electrical and Electronic Engineering}}
+		{\zh{香港}\lat{Hong Kong}}
         \zh{\item 研发三维视频编解码方法}
+		\en{\item Researched on 3D video coding}
+		\fr{\item Codage de vidéos 3D}
+        \zh{\item 自行开发的深度图压缩方法的效能超越同期的3D-HEVC}		
 		\en{\item Depth map codec outperformed 3D-HEVC}
-        \zh{\item 自行开发的深度图压缩方法的效能超越同期的3D-HEVC}
+		\fr{\item Notre codec de carte de profondeur surpassait le 3D-HEVC à cette époque}
 	\end{rSubsection}
 	
-	\begin{rSubsection}{\en{Marvel Digital Limited}\zh{万维数码}}
+	\begin{rSubsection}{\zh{万维数码}\lat{Marvel Digital Limited}}
 		{2015-08 -- 2017-12}
-		{\en{Consultant}\zh{工程咨询师}}
-		{\en{Hong Kong}\zh{香港}}
-		\en{\item Developed 3D video coding methods and deal with intellectual property paperworks} 
+		{\zh{工程咨询师}\lat{Consultant}}
+		{\zh{香港}\lat{Hong Kong}}
         \zh{\item 参与三维视频编解码标准竞投，撰写专利文书}
+		\en{\item Developed 3D video coding methods and deal with intellectual property paperworks} 
+		\fr{\item Développement des méthodes de codage vidéo 3D et traité des documents de propriété intellectuelle}
 	\end{rSubsection}
 	
-	\begin{rSubsection}{\en{The University of Hong Kong}\zh{香港大学}}
+	\begin{rSubsection}{\zh{香港大学}\en{The University of Hong Kong}\fr{Université de Hong Kong}}
 		{2011-08 -- 2015-08}
-		{\en{Research Assistant at Department of Electrical and Electronic Engineering}\zh{电机电子工程系，研究助理}}
-		{\en{Hong Kong}\zh{香港}}
-		\en{\item Worked in collaboration with Audio Video coding Standard workgroup (AVS)  of China}
+		{\zh{电机电子工程系，研究助理}\en{Research Assistant at Department of Electrical and Electronic Engineering}\fr{Assistant de recherche à Departement of Electrical and Electronic Engineering}}
+		{\zh{香港}\lat{Hong Kong}}
         \zh{\item 参与中国数字音视频编解码技术标准项目（AVS）的研发}
-		\en{\item Focused on video codec design and acceleration, 3D video content generation}
+		\en{\item Worked in collaboration with Audio Video coding Standard workgroup (AVS) of China}
+		\fr{\item Travaillé en collaboration avec le groupe de travail sur l'Audio/Video coding Standards (AVS) de la Chine}
         \zh{\item 研发视频编解码加速，三维视频内容生成方法}
-		\en{\item Achieved real-time AVS video encoding and decoding in ARM+DSP low power platform}
+		\en{\item Focused on video codec design and acceleration, 3D video content generation}
+		\fr{\item Axé sur la conception et l'accélération des codecs vidéo, la génération de contenu vidéo 3D}
         \zh{\item AVS-1在ARM+DSP平台上可以达到实时的编解码}
+		\en{\item Achieved real-time AVS video encoding and decoding in ARM+DSP low power platform}
+		\fr{\item Réalisé un encodage et un décodage vidéo AVS en temps réel sur une plateforme ARM+DSP basse consommation}
+        \zh{\item 开发半自动的图像分割和抠图工具}		
 		\en{\item Developed a semi-automatic image segmentation tool}
-        \zh{\item 开发半自动的图像分割和抠图工具}
+		\fr{\item Développé un outil de segmentation d'images semi-automatique}
 	\end{rSubsection}
 	
-	\begin{rSubsection}{\en{Solomon Systech Limited}\zh{晶门科技}}
+	\begin{rSubsection}{\zh{晶门科技}\lat{Solomon Systech Limited}}
 		{2009-06 -- 2010-05}
-		{\en{Engineering Trainee at Design Engineering Department}\zh{设计工程部，工程实习生}}
-		{\en{Hong Kong}\zh{香港}}
-		\en{\item Worked on image compression and coding algorithms for mobile device display system}
+		{\zh{设计工程部，工程实习生}\en{Engineering Trainee at Design Engineering Department}\fr{Stagiaire en ingénierie à Design Engineering Departement}}
+		{\zh{香港}\lat{Hong Kong}}
         \zh{\item 移动端显示设备上的快速图像编解码}
-		\en{\item Designed specifications and develop supporting softwares for new microcontroller product}
+		\en{\item Worked on image compression and coding algorithms for mobile device display system}
+		\fr{\item Travaillé sur des algorithmes de compression et de codage d'images pour les systèmes d'affichage des appareils mobiles}
         \zh{\item 参与开发和测试新微控制器产品的汇编环境等工具，测试指令集}
+		\en{\item Designed specifications and develop supporting softwares for new microcontroller product}
+		\fr{\item Conçu des spécifications et développé des logiciels de support pour un nouveau produit de microcontrôleur}
 	\end{rSubsection}
 \end{rSection}
 
@@ -156,44 +176,60 @@
 %	PROJECTS SECTION
 %----------------------------------------------------------------------------------------
 
-\begin{rSection}{\en{Projects}\zh{参与项目}}
-    \begin{rSubsection}{音视频编解码技术研究}{2023年01月 -- 现在}{}{}
-        \item 视频编解码技术预研，相关专利分析
-		\item 开发视频编解码新方法，专利申请，参与标准制定
+\begin{rSection}{\zh{参与项目}\en{Projects}\fr{Projets}}
+    \begin{rSubsection}{\zh{音视频编解码技术研究}\en{Audio and video coding research}\fr{Recherche sur le codage audio et video}}
+		{2023年01月 -- \zh{现在}\en{Now}\fr{Aujourd'hui}}{}{}
+        \zh{\item 基于VVC的技术改进}
+        \en{\item Technical development based on VVC standard}
+        \fr{\item Développement technique basé sur le standard VVC}
+        \zh{\item 参与JVET和AVS的提案活动和会议}
+        \en{\item Participate in proposal activities and meetings of JVET and AVS}
+		\fr{\item Participation aux activités de proposition et aux réunions de JVET et d'AVS}
     \end{rSubsection}
 	
-	\begin{rSubsection}{\en{Intracranial Video-electroencephalography}\zh{颅内视频脑电智能计算}}
+	\iffalse
+	\begin{rSubsection}{\zh{颅内视频脑电智能计算}\en{Intracranial Video-electroencephalography}\fr{Vidéo-électroencéphalographie intracrânienne}}
 		{2022-04 -- 2022-10}{}{}
-		\en{\item Localised EEG electrode contacts from CT scans for pre-surgical planning}
         \zh{\item 主要负责的工作是从病人头颅CT扫描中寻找植入的脑电电极}
-		\en{\item Primarily achieved localisation and automatic grouping}
+		\en{\item Localised EEG electrode contacts from CT scans for pre-surgical planning}
+		\fr{\item Localisation des contacts d'électrodes EEG des images CT pour la planification pré-chirurgicale}
         \zh{\item 初步实现电极的检测、定位、自动分组}
+		\en{\item Primarily achieved localisation and automatic grouping}
+		\fr{\item Réalisation principalement de la localisation et le regroupement automatique}
 	\end{rSubsection}
+	\fi
 
-	\begin{rSubsection}{\en{Auxiliary Video Data Compression and View Synthesis System}\zh{辅助视频数据压缩和视角生成系统}}
+	\begin{rSubsection}{\zh{辅助视频数据压缩和视角生成系统}\en{Auxiliary Video Data Compression and View Synthesis System}\fr{Compression des données vidéo auxiliaires et synthèse de vues}}
 		{2015-05 -- 2018-12}{}{}
-		\en{\item Designed compression algorithms for depth maps}
         \zh{\item 负责三维视频中的深度图压缩方法的设计，并开发了一套原创的深度图像和视频的压缩方法}
-		\en{\item Achieved a compression performance on par with 3D-HEVC or better without texture images}
+		\en{\item Designed compression algorithms for depth maps}
+		\fr{\item Conception d'algorithmes de compression pour les images et les vidéos de profondeur}
         \zh{\item 在不依赖纹理图像的情况下压缩深度图像，其压缩效能与3D-HEVC相当或更佳}
-		\en{\item Developed a GPU-accelerated software for 1080p real-time decoding}
+		\en{\item Achieved a compression performance on par with 3D-HEVC or better without texture images}
+		\fr{\item Présentation d'une performance de compression comparable ou supérieure à celle du 3D-HEVC sans recourir aux images de texture}
         \zh{\item 为压缩方法在GPU上设计了一套算法流程，达到1080p视频实时解码}
+		\en{\item Developed a GPU-accelerated software for 1080p real-time decoding}
+		\fr{\item Développement d'un logiciel accéléré par GPU pour le décodage en temps réel en 1080p}
 	\end{rSubsection}
 		
-	\begin{rSubsection}{\en{3D Video Content Generation and Processing System}\zh{三维视频内容生成及处理系统}}
+	\begin{rSubsection}{\zh{三维视频内容生成及处理系统}\en{3D Video Content Generation and Processing System}\fr{Génération et traitement de contenu vidéo 3D}}
 		{2013-05 -- 2015-08}{}{}
-		\en{\item Developed a semi-automatic image segmentation and data management tool}
         \zh{\item 开发半自动的图像分割和抠图算法}
-		\en{\item Designed related image segmentation algorithms}
+		\en{\item Developed a semi-automatic image segmentation and data management tool}
+		\fr{\item Développement d'algorithmes de segmentation d'images}
         \zh{\item 为制作三维视频的合作方提供了一个给图像进行物体切割，分层，组织数据的操作工具}
+		\en{\item Designed related image segmentation algorithms}
+		\fr{\item Développement d'un outil de segmentation d'images semi-automatique et de gestion des données pour notre partenaire de collaboration}
 	\end{rSubsection}
 		
-	\begin{rSubsection}{\en{Real-time AVS-1 Video Codec on Mobile Platform}\zh{AVS-1视频编码标准在移动平台的实现}}
+	\begin{rSubsection}{\zh{AVS-1视频编码标准在移动平台的实现}\en{Real-time AVS-1 Video Codec on Mobile Platform}\fr{Codec vidéo AVS-1 en temps réel sur plateforme ARM+DSP}}
 		{2011-08 -- 2013-05}{}{}
-		\en{\item Ported AVS video codec onto mobile-class ARM+DSP platform}
         \zh{\item 将AVS的视频编解码移植到与移动设备功耗相当的ARM+DSP平台}
-		\en{\item Achieved real-time 720p encoding and decoding}
+		\en{\item Ported AVS video codec onto mobile-class ARM+DSP platform}
+		\fr{\item Portage du codec vidéo AVS sur une plateforme ARM+DSP de classe mobile}
         \zh{\item 达到720p视频的实时编码和解码}
+		\en{\item Achieved real-time 720p encoding and decoding}
+		\fr{\item Atteinte d'un encodage et d'un décodage en 720p en temps réel avec gestion de la charge de calcul et traitement asynchrone}
 	\end{rSubsection}
 
 \end{rSection}
@@ -203,7 +239,7 @@
 %----------------------------------------------------------------------------------------
 
 \iffalse
-\begin{rSection}{\en{Publications and Patents}\zh{发表的论文与专利}}
+\begin{rSection}{\zh{发表的论文与专利}\en{Publications and Patents}\fr{Publications et brevets}}
 
 Z. Lin, \textbf{H. Qin} and S. C. Chan, ``A New Probabilistic Representation of Color Image Pixels and Its Applications,'' in \textit{IEEE Transactions on Image Processing}, vol. 28, no. 4, pp. 2037-2050, April 2019.
 
@@ -214,18 +250,19 @@ Z. Lin, \textbf{H. Qin} and S. C. Chan, ``A New Probabilistic Representation of 
 \end{rSection}
 \fi
 
-%----------------------------------------------------------------------------------------
-%	TECHNICAL STRENGTHS SECTION
-%----------------------------------------------------------------------------------------
+% %----------------------------------------------------------------------------------------
+% %	TECHNICAL STRENGTHS SECTION
+% %----------------------------------------------------------------------------------------
 
-\begin{rSection}{\en{Other Skills}\zh{其它技能}}
+\begin{rSection}{\zh{其它技能}\en{Other Skills}\fr{Autres techniques}}
 
-\begin{tabular}{ @{} >{\bfseries}l @{\hspace{2ex}} l }
-\en{Natural Languages}\zh{人类语言} & 
-\en{Mandarin (native), Cantonese (native), English (fluent), French (elementary)} 
-\zh{普通话（母语），粤语（母语），英语（熟练流利），法语（爱好，会一点）}\\
-\en{Computer Languages}\zh{计算机语言} & C/C++, Python, MatLab \\
-\en{Tools}\zh{开发工具} & Visual Studio, VSCode, Eclipse, Anaconda platform
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{2ex}}l }
+\zh{人类语言}\en{Natural Languages}\fr{Langues naturelles} & 
+\zh{普通话（母语），粤语（母语），英语（熟练流利），法语（爱好，会一点）}
+\en{Mandarin (native), Cantonese (native), \\ &English (fluent), French (elementary)}
+\fr{Mandarin (maternelle), Cantonais (maternelle), Anglais (courant), Français (élémentaire)}\\
+\zh{计算机语言}\en{Computer Languages}\fr{Langages informatiques} & C/C++, Python, MatLab \\
+\zh{工具}\en{Tools}\fr{Outils} & Visual Studio, VSCode, Eclipse, Anaconda platform
 \end{tabular}
 
 \end{rSection}
