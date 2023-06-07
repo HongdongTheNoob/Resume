@@ -5,5 +5,5 @@ Qin Hongdong's Resume
 
 Click [here](https://github.com/HongdongTheNoob/Resume/releases) and choose en.pdf to download my English resume
 
-Cliquez [ici](https://github.com/HongdongTheNoob/Resume/releases) et choissisez fr.pdf pour télécharger mon CV en français
+Cliquez [ici](https://github.com/HongdongTheNoob/Resume/releases) et choisissez fr.pdf pour télécharger mon CV en français
 
