@@ -1,0 +1,45 @@
+% !TEX program = xelatex
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\usepackage{fontspec, xunicode, xltxtra}
+\usepackage{xeCJK}
+
+\setmainfont{Segoe UI}
+\setCJKmainfont{HarmonyOS Sans SC}
+
+\usepackage[ocgcolorlinks]{hyperref}
+\hypersetup{
+	colorlinks   = true, %Colours links instead of ugly boxes
+	urlcolor     = blue, %Colour for external hyperlinks
+	linkcolor    = blue, %Colour of internal links
+	citecolor   = red %Colour of citations
+}
+
+\newif\ifzh
+\newif\ifen
+\newif\iffr
+\newif\iflat
+
+\newcommand{\zh}[1]{\ifzh#1\fi}
+\newcommand{\en}[1]{\ifen#1\fi}
+\newcommand{\fr}[1]{\iffr#1\fi}
+\newcommand{\lat}[1]{\iflat#1\fi}
+
+\zhtrue
+\en{\lattrue}
+\fr{\lattrue}
+
+\name{\zh{覃泓胨}\lat{QIN Hongdong}} % Your name
+\address{(+86)13603087140 \\ hongdongdonald@gmail.com} % Your phone number and email
+
+\begin{document}
+
+\input{content.tex}
+
+\end{document}
